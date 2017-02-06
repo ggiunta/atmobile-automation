@@ -2,16 +2,12 @@ Feature: My Journeys
 
 Scenario: New Journey
 
-	# Make this a reusable step
-	When I press "NEXT"
-	And I press "NEXT"
-	And I press "GET STARTED"
+	When I skip the Welcome page
 	
-	And I press "Create a journey Button"
+	And I am at My Journeys page
+	And I press Create A Journey button
 	
-	And I am about to create a Journey
+	And I am at Create A Journey page
 	And I create a Journey from "4 Viaduct Harbour Avenue, Auckland Central" to "Flat 3 137 Jervois Road, Herne Bay"
 	
-	And I press "CONTINUE"
-	
-	Then I wait for 10 seconds
+	Then I wait for 5 seconds

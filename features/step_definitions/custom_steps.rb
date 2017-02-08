@@ -19,3 +19,8 @@ When(/^I skip the Welcome page$/) do
     step 'I press "Next, Button"'
     step 'I press "Get Started, Button"'
 end
+
+Then(/^the Sort By Departure Time button is displayed$/) do
+    @current_page = page(JourneyResults).await(timeout: 30)
+    @current_page = @current_page.assert_departure_time_button()
+end

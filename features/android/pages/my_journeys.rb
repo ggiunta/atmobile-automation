@@ -9,7 +9,7 @@ class MyJourneysPage < ATBase
   end
 
   def create_journey_button
-    element_by_content_desc("Create a journey Button")
+    element_by_content_desc("Create a Journey Button")
   end
 
 end

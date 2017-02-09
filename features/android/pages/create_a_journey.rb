@@ -4,11 +4,15 @@ class CreateJourneyPage < ATBase
     "This is create journey screen"
   end
 
-  def create(from,to)
+  def create(from, to, name)
     enter_text(from_field, from)
     select_address(from)
     enter_text(to_field, to)
     select_address(to)
+    unless name.empty?
+      touch(save_journey_button)
+      keyboard_type(name)
+    end
     touch(continue_field)
   end
 
@@ -26,6 +30,10 @@ class CreateJourneyPage < ATBase
 
   def continue_field
     element_by_content_desc("CONTINUE, Button")
+  end
+
+  def save_journey_button
+    element_by_content_desc("Save Journey")
   end
 
 end

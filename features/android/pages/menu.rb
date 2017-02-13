@@ -1,4 +1,4 @@
-class Menu < ATBase
+class Menu < Base
 
   def title
     "Menu Button"

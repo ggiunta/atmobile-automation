@@ -1,6 +1,6 @@
 require 'calabash-android/abase'
 
-class ATBase < Calabash::ABase
+class Base < Calabash::ABase
 
   def element_by_content_desc(content_desc)
     "* contentDescription:'#{content_desc}'"

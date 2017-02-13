@@ -1,4 +1,4 @@
-class MyJourneysPage < ATBase
+class MyJourneys < Base
 
   def title
     "Create a Journey Button"

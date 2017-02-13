@@ -1,4 +1,4 @@
-class CreateJourneyPage < ATBase
+class CreateJourney < Base
 
   def title
     "This is create journey screen"

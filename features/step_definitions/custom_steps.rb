@@ -1,5 +1,5 @@
 When(/^I am at Create A Journey page$/) do
-  @current_page = page(CreateJourneyPage).await(timeout: 30)
+  @current_page = page(CreateJourney).await(timeout: 30)
 end
 
 When(/^I create the Journey:$/) do |table|
@@ -8,7 +8,7 @@ When(/^I create the Journey:$/) do |table|
 end
 
 When(/^I am at My Journeys page$/) do
-  @current_page = page(MyJourneysPage).await(timeout: 30)
+  @current_page = page(MyJourneys).await(timeout: 30)
 end
 
 When(/^I press Create A Journey button$/) do
@@ -25,7 +25,7 @@ end
 When(/^I navigate to My Journeys page$/) do
   @current_page = page(Menu).await(timeout: 30)
   @current_page.navigate_to_my_journeys()
-  @current_page = page(MyJourneysPage).await(timeout: 30)
+  @current_page = page(MyJourneys).await(timeout: 30)
 end
 
 When(/^I view the Journey "([^\"]*)"$/) do |name|
@@ -37,11 +37,11 @@ When(/^I touch back button$/) do
 end
 
 Then(/^the Sort By Departure Time button is displayed$/) do
-  @current_page = page(JourneyResults).await(timeout: 30)
+  @current_page = page(Journey).await(timeout: 30)
   @current_page.assert_departure_time_button()
 end
 
 Then(/^Journey "([^\"]*)" is displayed$/) do |name|
-  @current_page = page(JourneyResults).await(timeout: 30)
+  @current_page = page(Journey).await(timeout: 30)
   @current_page.assert_journey_is_displayed(name)
 end

@@ -1,4 +1,4 @@
-class JourneyResults < ATBase
+class Journey < Base
 
   def title
     "This is journey screen"

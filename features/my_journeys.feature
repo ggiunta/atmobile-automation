@@ -1,7 +1,7 @@
 @skip_welcome_page
 Feature: My Journeys
 
-Scenario: New Journey
+Scenario: Search Journey
 
   When I am at My Journeys page
   And I press Create A Journey button

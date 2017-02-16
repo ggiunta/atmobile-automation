@@ -16,10 +16,12 @@ class Base < Calabash::ABase
   end
 
   def keyboard_type(text)
-    keyboard_enter_text(text)
-    sleep(2)
+    text.each_char do |c|
+      keyboard_enter_text(c)
+      sleep(0.25)
+    end
     hide_soft_keyboard()
-    sleep(2)
+    sleep(0.5)
   end
 
 end

@@ -28,6 +28,12 @@ When(/^I navigate to My Journeys page$/) do
   @current_page = page(MyJourneys).await(timeout: 30)
 end
 
+When(/^I navigate to Terms and conditions page$/) do
+  @current_page = page(Menu).await(timeout: 30)
+  @current_page.navigate_to_terms_and_conditions()
+  @current_page = page(TermsAndConditions).await(timeout: 30)
+end
+
 When(/^I view the Journey "([^\"]*)"$/) do |name|
   @current_page.view_journey(name)
 end
@@ -44,4 +50,8 @@ end
 Then(/^Journey "([^\"]*)" is displayed$/) do |name|
   @current_page = page(Journey).await(timeout: 30)
   @current_page.assert_journey_is_displayed(name)
+end
+
+Then(/^Terms and conditions are displayed$/) do
+  @current_page.assert_terms_and_conditions_are_displayed()
 end

@@ -25,7 +25,6 @@ Scenario: Save Journey
 
   Then Journey "Dog" is displayed
 
-@dev
 Scenario: View saved Journey
 
   When I am at My Journeys page
@@ -43,3 +42,8 @@ Scenario: View saved Journey
   And I view the Journey "Cat"
 
   Then Journey "Cat" is displayed
+
+Scenario: View Terms and Conditions
+
+  When I navigate to Terms and conditions page
+  Then Terms and conditions are displayed

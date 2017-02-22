@@ -9,7 +9,7 @@ class TermsAndConditions < Base
   end
 
   def terms_text
-    element_marked("In these terms and conditions, unless the context otherwise requires:")
+    element_marked("The following terms and conditions only apply to the AT Mobile App for smart-phone, tablet, or wearable technology.")
   end
 
 end

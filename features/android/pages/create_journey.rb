@@ -21,7 +21,7 @@ class CreateJourney < Base
   end
 
   def from_field
-    element_by_content_desc("From Current location, click to modify, button")
+    element_by_content_desc("From: Current location, click to modify, button")
   end
 
   def to_field

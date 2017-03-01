@@ -76,6 +76,7 @@ GEM
       thor (>= 0.18.1, < 1.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -84,4 +85,4 @@ DEPENDENCIES
   xamarin-test-cloud (= 2.1.0)
 
 BUNDLED WITH
-   1.14.4
+   1.14.5

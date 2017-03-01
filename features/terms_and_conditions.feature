@@ -3,5 +3,5 @@ Feature: Terms and conditions
 
 Scenario: View Terms and conditions
 
-  When I navigate to Terms and conditions page
-  Then Terms and conditions are displayed
+  When I navigate to terms and conditions page
+  Then terms and conditions are displayed

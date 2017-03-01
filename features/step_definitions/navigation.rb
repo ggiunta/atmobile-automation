@@ -1,9 +1,9 @@
-When(/^I navigate to My Journeys page$/) do
+When(/^I navigate to my journeys page$/) do
   page(Menu).await(timeout: 30).navigate_to_my_journeys()
   @current_page = page(Journeys).await(timeout: 30)
 end
 
-When(/^I navigate to Terms and conditions page$/) do
+When(/^I navigate to terms and conditions page$/) do
   page(Menu).await(timeout: 30).navigate_to_terms_and_conditions()
   @current_page = page(TermsAndConditions).await(timeout: 30)
 end

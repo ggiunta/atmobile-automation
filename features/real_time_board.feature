@@ -3,7 +3,7 @@ Feature: Real Time Board
 
   Scenario: Add by stop number
     When I navigate to real time boards page
-    And I press create a board button
+    And I touch create a board button
     And I create the real time board:
       | Stop  | Name |
       | 7006  | Red  |

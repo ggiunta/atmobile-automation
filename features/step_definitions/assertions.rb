@@ -11,3 +11,7 @@ end
 Then(/^Terms and conditions are displayed$/) do
   @current_page.assert_terms_and_conditions_are_displayed()
 end
+
+Then(/^the real time board routes are displayed$/) do
+  @current_page.assert_real_time_board_table()
+end

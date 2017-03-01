@@ -1,4 +1,4 @@
-class MyJourneys < Base
+class Journeys < Base
 
   def title
     "Create a Journey Button"

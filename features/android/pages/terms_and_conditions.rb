@@ -4,7 +4,7 @@ class TermsAndConditions < Base
     "TERMS & CONDITIONS"
   end
 
-  def assert_terms_and_conditions_are_displayed
+  def assert_terms_and_conditions()
     wait_for_element_exists(terms_text)
   end
 

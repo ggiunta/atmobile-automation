@@ -1,6 +1,6 @@
 When(/^I navigate to My Journeys page$/) do
   page(Menu).await(timeout: 30).navigate_to_my_journeys()
-  @current_page = page(MyJourneys).await(timeout: 30)
+  @current_page = page(Journeys).await(timeout: 30)
 end
 
 When(/^I navigate to Terms and conditions page$/) do

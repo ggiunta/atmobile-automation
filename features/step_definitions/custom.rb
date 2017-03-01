@@ -18,7 +18,7 @@ When(/^I am at Create A Journey page$/) do
 end
 
 When(/^I am at My Journeys page$/) do
-  @current_page = page(MyJourneys).await(timeout: 30)
+  @current_page = page(Journeys).await(timeout: 30)
 end
 
 When(/^I press Create A Journey button$/) do

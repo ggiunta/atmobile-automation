@@ -12,6 +12,11 @@ When(/^I create the real time board:$/) do |table|
   @current_page = page(ViewRealTimeBoard).await(timeout: 30)
 end
 
+When(/^I view the journey "([^\"]*)"$/) do |name|
+  @current_page.view_journey(name)
+  @current_page = page(ViewJourney).await(timeout: 30)
+end
+
 When(/^I touch create a journey button$/) do
   @current_page.touch_create()
   @current_page = page(CreateJourney).await(timeout: 30)
@@ -22,16 +27,11 @@ When(/^I touch create a board button$/) do
   @current_page = page(CreateRealTimeBoard).await(timeout: 30)
 end
 
-When(/^I view the journey "([^\"]*)"$/) do |name|
-  @current_page.view_journey(name)
-  @current_page = page(ViewJourney).await(timeout: 30)
-end
-
 When(/^I touch back button$/) do
   @current_page.back()
 end
 
-When(/^I skip the Welcome page$/) do
+When(/^I skip the welcome page$/) do
   step 'I press "Next, Button"'
   step 'I press "Next, Button"'
   step 'I press "Get Started, Button"'

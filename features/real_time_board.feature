@@ -8,5 +8,3 @@ Feature: Real Time Board
       | Stop  | Name |
       | 7006  | Red  |
     Then the real time board routes are displayed
-
-  Scenario: Add by location
